@@ -1,0 +1,114 @@
+
+@media(max-width:768px){
+	#header{
+		text-align: center;
+	}
+}
+@media(min-width:768px) and (max-width:979px){
+	.row .module_ms1.span12,
+	.row .module_ms2.span12 {
+	    width: 704px !important;
+	}
+	.row .module_ms1.span11,
+	.row .module_ms2.span11 {
+	    width: 642px !important;
+	}
+	.row .module_ms1.span10,
+	.row .module_ms2.span10 {
+	    width: 580px!important;
+	}
+	.row .module_ms1.span9,
+	.row .module_ms2.span9 {
+	    width: 518px!important;
+	}
+	.row .module_ms1.span8,
+	.row .module_ms2.span8 {
+	    width: 456px!important;
+	}
+	.row .module_ms1.span7,
+	.row .module_ms2.span7 {
+	    width: 394px!important;
+	}
+	.row .module_ms1.span6,
+	.row .module_ms2.span6 {
+	    width: 332px!important;
+	}
+	.row .module_ms1.span5,
+	.row .module_ms2.span5 {
+	    width: 270px!important;
+	}
+	.row .module_ms1.span4,
+	.row .module_ms2.span4 {
+	    width: 208px!important;
+	}
+	.row .module_ms1.span3,
+	.row .module_ms2.span3 {
+	    width: 146px!important;
+	}
+	.row .module_ms1.span2,
+	.row .module_ms2.span2 {
+	    width: 84px!important;
+	}
+	.row .module_ms1.span1,
+	.row .module_ms2.span1 {
+	    width: 22px!important;
+	}
+	
+}     
+@media(max-width:768px){
+	.row .module_ms1[class*="span"],
+	.row .module_ms2[class*="span"]{
+		width: auto !important;
+	}	
+}
+@media(min-width:1200px){
+	
+	.row .module_ms1.span12,
+	.row .module_ms2.span12  {
+	    width: 1150px !important;
+	}
+	.row .module_ms1.span11,
+	.row .module_ms2.span11 {
+	    width: 1050px !important;
+	}
+	.row .module_ms1.span10,
+	.row .module_ms2.span10  {
+	    width: 950px!important;
+	}
+	.row .module_ms1.span9,
+	.row .module_ms2.span9 {
+	    width: 850px!important;
+	}
+	.row .module_ms1.span8,	
+	.row .module_ms2.span8 {
+	    width: 750px!important;
+	}
+	.row .module_ms1.span7,
+	.row .module_ms2.span7 {
+	    width: 650px!important;
+	}
+	.row .module_ms1.span6,
+	.row .module_ms2.span6 {
+	    width: 550px!important;
+	}
+	.row .module_ms1.span5,
+	.row .module_ms2.span5 {
+	    width: 450px!important;
+	}
+	.row .module_ms1.span4,
+	.row .module_ms2.span4 {
+	    width: 350px!important;
+	}
+	.row .module_ms1.span3,
+	.row .module_ms2.span3 {
+	    width: 250px!important;
+	}
+	.row .module_ms1.span2,
+	.row .module_ms2.span2 {
+	    width: 150px!important;
+	}
+	.row .module_ms1.span1,
+	.row .module_ms2.span1 {
+	    width: 50px!important;
+	}	
+}

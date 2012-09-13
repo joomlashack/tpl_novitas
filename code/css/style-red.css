@@ -1,0 +1,8 @@
+@charset "utf-8";
+.navbar .nav > li > a:focus, .navbar .nav > li > a:hover{
+	text-shadow: -1px 1px 0 #3F4345;
+}
+#footer a:hover{
+	color: red;
+}
+

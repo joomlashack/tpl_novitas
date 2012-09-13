@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+.moduletable_ms1,
+.module_ms1,
+.moduletext_ms1{
+	background-color: #fff;
+}
+.navbar .nav > li > a:focus, .navbar .nav > li > a:hover{
+	text-shadow: -1px 1px 0 #3F4345;
+}
+#footer a:hover{
+	color: #004C99;
+}
+.moduletable_ms1 h3, .module_ms1 h3, .moduletext_ms1 h3 {
+    border-top: 8px solid #004C99;
+    color: #004C99;
+}
+.navbar-inverse .navbar-inner {
+    background-color: #004C99;
+    border-bottom: 1px solid #293D51;
+    border-top: 1px solid #293D51;        
+}
+#main #tabs h1 a, #main #tabs h2 a, #main #tabs h3 a, #main #tabs h4 a, #main #tabs h5 a, #main #tabs h6 a, #main .tabs h1 a, #main .tabs h2 a, #main .tabs h3 a, #main .tabs h4 a, #main .tabs h5 a, #main .tabs h6 a {
+    color: #004C99;
+}
+
+#toolbar .navbar .btn-navbar .icon-bar{
+	background-color: #003366;
+}
+code{
+	color: #004C99;
+}
+.form-actions{
+	background-color: #f1f1f1;
+	border: 0 none;
+}
