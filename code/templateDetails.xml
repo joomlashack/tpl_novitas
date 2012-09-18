@@ -8,7 +8,7 @@
 	<authorUrl>http://www.joomlashack.com</authorUrl>
 	<copyright>Copyright Joomlashack 2012. All rights reserved</copyright>
 	<license>GNU GPLv2</license>
-	<version>1.0.0 RC1</version>
+	<version>1.0.0</version>
     <description>TPL_JS_NOVITAS_XML_DESCRIPTION</description>
 
 	<languages folder="language">
@@ -82,7 +82,7 @@
 					<option value="xhtml1strict">TPL_JS_WRIGHT_FIELD_DOCTYPE_XHTML1_STRICT</option>
 				</field>
 				<field name="buttonspacer" label="TPL_JS_WRIGHT_BOOTSTRAP_TITLE_LABEL" description="TPL_JS_WRIGHT_BOOTSTRAP_TITLE_DESC" type="spacer" />
-				<field name="bs_rowmode" type="list" default="row-fluid" label="TPL_JS_WRIGHT_FIELD_BOOTSTRAP_ROW_MODE_LABEL" description="TPL_JS_WRIGHT_FIELD_BOOTSTRAP_ROW_MODE_DESC">
+				<field name="bs_rowmode" type="list" default="row" label="TPL_JS_WRIGHT_FIELD_BOOTSTRAP_ROW_MODE_LABEL" description="TPL_JS_WRIGHT_FIELD_BOOTSTRAP_ROW_MODE_DESC">
 					<option value="row-fluid">TPL_JS_WRIGHT_FIELD_BOOTSTRAP_ROW_MODE_FLUID</option>
 					<option value="row">TPL_JS_WRIGHT_FIELD_BOOTSTRAP_ROW_MODE_DEFAULT</option>
 				</field>

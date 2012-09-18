@@ -542,9 +542,8 @@ aside .moduletext,
     border-radius: 0 0 0 0;
     margin-bottom: 10px;
 }
-.btn,
-.well{
-	border-radius: 0 0 0 0 !important;
+.btn {
+	border-radius: 2px 2px 2px 2px !important;
 }
 
 p::selection{
@@ -578,3 +577,27 @@ p::-moz-selection{
 section {
     padding-top: 30px;
 }
+
+section div#above-content {
+	margin-top: -30px;
+}
+
+.nav .dropdown-toggle .caret {
+	border-bottom-color: #666666;
+	border-top-color: #666666;
+}
+
+.nav .dropdown-toggle.btn-primary .caret,
+.nav .dropdown-toggle.btn-danger .caret,
+.nav .dropdown-toggle.btn-warning .caret,
+.nav .dropdown-toggle.btn-success .caret,
+.nav .dropdown-toggle.btn-info .caret,
+.nav .dropdown-toggle.btn-inverse .caret {
+	border-bottom-color: #FFFFFF;
+	border-top-color: #FFFFFF;
+}
+
+div.module div.moduletable div.custom ul.latestnews.nav li a {
+	margin: 10px 0;
+}
+
