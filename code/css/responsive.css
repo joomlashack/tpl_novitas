@@ -58,9 +58,21 @@
 	#header{
 		text-align: center;
 	}
+	.module, .moduletable, .moduletext, #top > div {
+		padding: 0;
+	}
+	[class*="span"], .row-fluid [class*="span"] {
+		margin-bottom: 0;
+	}
+	.moduletable, .moduletable_ms1, .moduletable_ms2, .moduletable_ms3, .moduletext, .moduletext_ms1, .moduletext_ms2, .moduletext_ms3, .module, .module_ms1, .module_ms2, .module_ms3 {
+		margin-bottom: 0;
+	}
+	#toolbar, #header, #menu, #featured, #grid-top, #main-content, #above-content, #breadcrumbs, #grid-bottom, #grid-bottom2, #bottom-menu {
+		margin-bottom: 0;
+	}
 }
 @media(max-width:1163px){
-	#mod-search-searchword{
+	aside #mod-search-searchword{
 		clear: both;
 		display: block;
 	}
