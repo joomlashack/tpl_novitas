@@ -116,6 +116,10 @@
 	.navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle{
 		background-color: #3F4345;
 	}
+	.module_ms2.pull-left.col-one,
+	.module_ms2.pull-right.col-two{
+		width: auto;
+	}
 	
 }
 @media(min-width:1200px){
