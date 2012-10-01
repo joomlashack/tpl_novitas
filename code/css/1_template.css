@@ -601,3 +601,6 @@ div.module div.moduletable div.custom ul.latestnews.nav li a {
 	margin: 10px 0;
 }
 
+.module_ms2.pull-left.col-one, .module_ms2.pull-left.col-two{
+	width: 41%;
+}
