@@ -169,6 +169,8 @@
 	.row .module_ms2.span1 {
 	    width: 50px!important;
 	}	
+}
+@media(max-width:1200px){
 	.module_ms2.pull-left.col-one,
 	.module_ms2.pull-right.col-two{
 		width: auto;
