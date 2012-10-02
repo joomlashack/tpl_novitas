@@ -18,7 +18,7 @@
 }
 .navbar{
 	margin-bottom: 0;
-}
+} 
 /**************************** link  ***********************************************/
 /****** menu ******/
 #menu .navbar .nav > li > a{
@@ -423,6 +423,8 @@ aside .moduletext,
 	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.065);
 	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.065);
 	box-shadow:0 1px 4px rgba(0, 0, 0, 0.065);*zoom:1;
+	display:table;
+	margin: auto;
 }
 #bottom-menu .nav-collapse .nav > li > a{
 	color: white;
@@ -601,3 +603,7 @@ div.module div.moduletable div.custom ul.latestnews.nav li a {
 	margin: 10px 0;
 }
 
+.module_ms2.pull-left.col-one, 
+.module_ms2.pull-right.col-two{
+	width: 41%; 
+}
