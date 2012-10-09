@@ -138,11 +138,7 @@ span.separator{
 #member-registration .validate{
 	margin-bottom: 0;
 }
-.nav-tabs > .open a{
-	color: #fff !important;
-    text-decoration: none !important;
-    text-shadow: 0 0 0 transparent;
-}
+
 .nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a{
 	border-radius:0 0 0 0;
 	font-weight: normal;
@@ -167,7 +163,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{
     line-height: 40px;
 }
 
-#main h1,#main h2,#main h3,#main h4,#main h5,#main h6,
+#main h1,#main h2,#main h4,#main h5,#main h6,
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
 	font-weight: normal;
 	font-family: "Times New Roman";	
@@ -193,10 +189,19 @@ dl.article-info{
     margin: 20px 0 10px;
     padding-bottom: 0;
 }
-.breadcrumbs .icon-caret-right:before{
+.breadcrumbs,
+.breadcrumb{
+	background-color: transparent;
+}
+.filter-search.alert.alert-info{
+	background-color: #f5f5f5;
+}
+.breadcrumbs .icon-caret-right:before,
+.breadcrumb .icon-caret-right:before{
 	content: ">";
 }
 .breadcrumbs a:hover,
+.breadcrumb a:hover,
 #main h1 a:hover,#main h2 a:hover,#main h3 a:hover,#main h4 a:hover,#main h5 a:hover,#main h6 a:hover{
 	text-decoration: none;
 }
@@ -509,21 +514,8 @@ aside .moduletext,
 .navbar .btn-navbar .icon-bar{
 	width: 40px;
 }
-.nav-tabs .tabs.open a{
-	background-color:transparent;
-	border-color:#3F4345;
-	border-bottom-color:white;
-	border-width: 1px 1px 1px;
-	color: #333!important;
-}
-.nav-tabs .tabs a{
-	color:white!important;
-	background-color: #3F4345;
-	border-width: 0 0 0 0;
-}
-.nav-tabs{
-	border-bottom:1px solid #3F4345;
-}
+
+
 .search input[type="image"]{
 	background-image: none;
 	filter: none;
