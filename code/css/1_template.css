@@ -422,6 +422,7 @@ aside .moduletext,
 	border-left: 1px solid #ccc;
 	padding-left: 1%;
 }
+
 #bottom-menu .navbar-inner{
 	background-color:#000;
 	background-image:none;
@@ -432,6 +433,9 @@ aside .moduletext,
 	display:table;
 	margin: auto;
 	filter: none;
+}
+body.is_chrome #bottom-menu .navbar-inner{
+	display: block;
 }
 #bottom-menu .nav-collapse .nav > li > a{
 	color: white;
