@@ -523,18 +523,6 @@ body.is_chrome #bottom-menu .navbar-inner{
 }
 
 
-.search input[type="image"]{
-	background-image: none;
-	filter: none;
-	background-color: transparent;
-	padding: 0;
-	border:0 none;
-	box-shadow:0 0 0;
-	margin-left: 0!important;
-	margin-right: 0!important;
-	border-radius: 0 0 0 0;
-}
-
 .clear{
 	clear: both;
 }
