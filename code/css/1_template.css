@@ -523,25 +523,13 @@ body.is_chrome #bottom-menu .navbar-inner{
 }
 
 
-.search input[type="image"]{
-	background-image: none;
-	filter: none;
-	background-color: transparent;
-	padding: 0;
-	border:0 none;
-	box-shadow:0 0 0;
-	margin-left: 0!important;
-	margin-right: 0!important;
-	border-radius: 0 0 0 0;
-}
-
 .clear{
 	clear: both;
 }
 #mod-search-searchword {
     border: 2px solid #CDCDCD;
     border-radius: 0 0 0 0;
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
 .btn {
 	border-radius: 2px 2px 2px 2px !important;
