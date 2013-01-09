@@ -535,10 +535,10 @@ body.is_chrome #bottom-menu .navbar-inner{
 	border-radius: 2px 2px 2px 2px !important;
 }
 
-p::selection{
+::selection{
 		background-color: #E5E6E6;
 }
-p::-moz-selection{
+::-moz-selection{
 	background-color: #E5E6E6;
 }
 .text-right{
