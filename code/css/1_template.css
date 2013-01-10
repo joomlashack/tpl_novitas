@@ -410,9 +410,6 @@ aside .moduletext,
 	font-size:13px;
 	font-weight: bold;
 }
-.nav{
-	margin-bottom: 0;
-}
 .nav + *{
 	margin-top: 20px;
 }
@@ -467,7 +464,6 @@ body.is_chrome #bottom-menu .navbar-inner{
 #main .tabs h4 a, 
 #main .tabs h5 a, 
 #main .tabs h6 a{
-	color: #DD0000;
 	text-decoration:none;
 	margin-top: 10px;
 	line-height: normal;
@@ -593,15 +589,19 @@ div.module div.moduletable div.custom ul.latestnews.nav li a {
 	width: 41%; 
 }
 /*TABS*/
+.nav-tabs{
+	border-bottom: 1px solid #3F4345;
+}
 dl.nav-tabs{
 	padding-bottom: 8px;
 }
 dl.tabs.nav h3{
 	margin-top: 0;
+	margin-right: 2px;
 }
 .nav-tabs .tabs a,
 #myTab.nav-tabs > li > a {
-	font-size: 18px;
+	font-size: 1em;
 	font-weight: bold;
 	padding: 8px 12px;
 }
@@ -610,15 +610,21 @@ dl.tabs.nav h3{
 	background-color: #3F4345;
     border-color: #3F4345;
 	color: #FFFFFF;
+	border-style: solid;
+	border-width: 1px;
+	border-color: transparent;
 }
 .nav-tabs .tabs a:hover,
 #myTab.nav-tabs > li > a:hover{
-	background-color: #eee;
+	background-color: #70777a;
+	border-color: #3F4345 #3F4345 transparent;
+	color: #ccc;
 }
-.nav-tabs > .open h3 a {
+.nav-tabs > .open h3 a,
+.nav-tabs > .open h3 a:hover  {
 	background-color: #FFFFFF;
 	border-color: #3F4345 #3F4345 transparent;
-	color: #E46C07 !important;
+	color: #3F4345 !important;
 }
 #myTab.nav-tabs > .active > a, 
 #myTab.nav-tabs > .active > a:hover{

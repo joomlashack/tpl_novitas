@@ -20,9 +20,6 @@
     border-bottom: 1px solid #293D51;
     border-top: 1px solid #293D51;        
 }
-#main #tabs h1 a, #main #tabs h2 a, #main #tabs h3 a, #main #tabs h4 a, #main #tabs h5 a, #main #tabs h6 a, #main .tabs h1 a, #main .tabs h2 a, #main .tabs h3 a, #main .tabs h4 a, #main .tabs h5 a, #main .tabs h6 a {
-    color: #004C99;
-}
 
 #toolbar .navbar .btn-navbar .icon-bar{
 	background-color: #003366;
@@ -33,4 +30,8 @@ code{
 .form-actions{
 	background-color: #f1f1f1;
 	border: 0 none;
+}
+.nav-tabs > .open h3 a,
+.nav-tabs > .open h3 a:hover {
+	background-color: #F0F0ED;
 }
