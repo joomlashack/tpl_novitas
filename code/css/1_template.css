@@ -16,9 +16,6 @@
 	padding-left: 0;
 	padding-right:0;
 }
-.navbar{
-	margin-bottom: 0;
-} 
 /**************************** link  ***********************************************/
 /****** menu ******/
 #menu .navbar .nav > li > a{
@@ -229,8 +226,10 @@ ul.category-module.nav h1{
 	float: left;
 	margin-right: 10px;
 }
-#footer{
+.wrapper-footer{
 	padding-top: 10px;
+}
+#footer{
 	background-color: black;
 	background-image: none;
 	filter: none;
@@ -238,6 +237,11 @@ ul.category-module.nav h1{
 #footer a{
 	color: white;
 	text-decoration:underline;
+	text-shadow: none;
+}
+#footer .navbar .nav > li > a:focus, 
+#footer .navbar .nav > li > a:hover{
+	color: #fff;
 }
 .footer1, .footer2{
 	font-size: 12px;
@@ -287,11 +291,6 @@ aside .uneditable-input{
 	clear: both;
 	margin-top: 10px;
 }
-
-/*  .readmore:after{
-	content:" >>";
-}
-*/
 
 #featured .moduletable, 
 #featured .moduletable_ms1, 
