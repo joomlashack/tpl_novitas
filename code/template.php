@@ -117,22 +117,20 @@ defined('_JEXEC') or die('Restricted access');
            
     <!-- footer -->
     
-    <?php if ($this->countModules('footer') || $this->countModules('bottom-menu')) : ?>
-        <div class="wrapper-footer">
-            <footer id="footer" <?php if ($this->params->get('stickyFooter',1)) : ?> class="sticky"<?php endif;?>>
-                <?php if ($this->countModules('bottom-menu')) : ?>
-                    <!-- bottom-menu -->
-                    <w:nav containerClass="<?php echo $containerClass ?>" rowClass="<?php echo $gridMode;?>" name="bottom-menu" />
-                <?php endif; ?>
+    <div class="wrapper-footer">
+        <footer id="footer" <?php if ($this->params->get('stickyFooter',1)) : ?> class="sticky"<?php endif;?>>
+            <?php if ($this->countModules('bottom-menu')) : ?>
+                <!-- bottom-menu -->
+                <w:nav containerClass="<?php echo $containerClass ?>" rowClass="<?php echo $gridMode;?>" name="bottom-menu" />
+            <?php endif; ?>
+            <div class="<?php echo $containerClass ?>">
                 <?php if ($this->countModules('footer')) : ?>
-                    <div class="<?php echo $containerClass ?>">
-                            <br>
-                            <w:module type="<?php echo $gridMode; ?>" name="footer" chrome="xhtml" />
-                            <w:footer />
-                    </div>
+                    <br>
+                    <w:module type="<?php echo $gridMode; ?>" name="footer" chrome="xhtml" />
                 <?php endif; ?>
-            </footer>
-        </div>
-    <?php endif; ?>
+                <w:footer />
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
