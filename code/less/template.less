@@ -220,9 +220,6 @@ ul.category-module.nav h1{
 	float: left;
 	margin-right: 10px;
 }
-.wrapper-footer{
-	padding-top: 10px;
-}
 #footer{
 	background-color: black;
 	background-image: none;
@@ -635,7 +632,8 @@ p.img_caption {
 	color: #444;
 	font-family: Arial;
 }
-.pager a, .pager span {
+.pager a, .pager span,
+.pager li > a, .pager li > span {
 	background-color: transparent;
 	border: 0;
 	border-bottom: 3px solid black;
@@ -668,4 +666,46 @@ p.img_caption {
 .pager a:hover::before,
 .pager span:hover::before{
 	border-bottom: 1px solid #555;
+}
+// Joomla
+div.intro{
+	padding-left: 14px;
+	padding-right: 10px;
+}
+.filter-search button.button.btn{
+	margin-bottom: 10px;
+}
+#bottom-menu,
+#bottom-menu .navbar{
+	margin-bottom: 0;
+}
+.items-more.well{
+	padding: 5px 0 0 0;
+	h3{
+		font-size: 1.6em;
+		padding-left: 15px;
+	}
+}
+.readmore .icon-chevron-right{
+	display: none;
+}
+.categories-list,
+.cat-children {
+	h3 a{	
+		text-decoration: none;
+	}
+}
+.categories-list{
+	h3 a{
+		color: @linkColor;
+		&.btn{
+			color: #333;
+		}
+	}
+}
+.item-title{
+	padding-bottom: 9px;
+}
+.counter{
+	margin-right: 5px;
 }
