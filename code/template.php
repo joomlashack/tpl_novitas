@@ -23,13 +23,13 @@ defined('_JEXEC') or die('Restricted access');
          <link href="<?php echo $this->baseurl;?>/templates/<?php echo $this->document->template;?>/css/style-<?php echo $theme ?>.responsive.css" rel="stylesheet" type="text/css" media="screen" />
     <?php endif; ?>
 </head>
-<body<?php if ($bodyclass != "") :?> class="<?php echo $bodyclass?>"<?php endif; ?>>
- 
+<body>
+
     <?php if ($this->countModules('toolbar')) : ?>
     <!-- menu -->
     <w:nav containerClass="<?php echo $containerClass ?>" rowClass="<?php echo $gridMode;?>" wrapClass="navbar-fixed-top navbar-inverse" type="toolbar" name="toolbar" />
     <?php endif; ?>
- 
+
     <?php if ($this->countModules('menu')) : ?>
         <!-- menu -->
         <w:nav containerClass="<?php echo $containerClass ?>" rowClass="<?php echo $gridMode;?>"  name="menu" />
@@ -51,9 +51,9 @@ defined('_JEXEC') or die('Restricted access');
                 <div class="clear"></div>
             </div>
         </header>
-       
-            
-     
+
+
+
        <!-- grid-top -->
         <?php if ($this->countModules('grid-top')) : ?>
         <div id="grid-top">
@@ -111,12 +111,12 @@ defined('_JEXEC') or die('Restricted access');
                 <w:module type="<?php echo $gridMode; ?>" name="grid-bottom2" chrome="wrightflexgrid" />
         </div>
         <?php endif; ?>
-      
+
     </div>
 
-           
+
     <!-- footer -->
-    
+
     <div class="wrapper-footer">
         <footer id="footer" <?php if ($this->params->get('stickyFooter',1)) : ?> class="sticky"<?php endif;?>>
             <?php if ($this->countModules('bottom-menu')) : ?>

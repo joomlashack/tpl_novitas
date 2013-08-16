@@ -17,10 +17,6 @@ if ($gridMode == 'row-fluid') {
     $containerClass = 'container-fluid';
 }
 
-$bodyclass = "";
-if ($this->countModules('toolbar')) {
-	$bodyclass = "toolbarpadding";
-}
 
 $user = JFactory::getUser();
 $theme = JRequest::getVar('templateTheme',$user->getParam('theme',$this->params->get('style','red')));
