@@ -58,10 +58,9 @@
 }
 
 .navbar .dropdown-menu li > span:hover,.navbar .dropdown-menu .active > span{
-	background-color: transparent;
+	background-color: transparent !important;
 	background-image: none;
 	filter: none;
-	color: #666;
 }
 /**************************** link hover ***********************************************/
 .nav-collapse .nav > li > a:hover{
@@ -123,9 +122,6 @@
 .wrapper-toolbar + .wrapper-menu .nabar-inner{
 	border-top: 0;
 }
-span.separator{
-	color: gray;
-}
 #member-registration .validate{
 	margin-bottom: 0;
 }
@@ -167,6 +163,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
 }
 
 dl.article-info{
+	color: @textColor;
 	font-family: "Arial";
 	text-transform: uppercase;
 }
@@ -184,6 +181,9 @@ dl.article-info{
 .breadcrumb{
 	background-color: transparent;
 }
+.breadcrumb{
+	padding: 0;
+}
 .filter-search.alert.alert-info{
 	background-color: #f5f5f5;
 	border: 0 none;
@@ -191,6 +191,12 @@ dl.article-info{
 .breadcrumbs .icon-caret-right:before,
 .breadcrumb .icon-caret-right:before{
 	content: ">";
+}
+#breadcrumbs{
+	margin-bottom: 0;
+	.module{
+		padding: 0;
+	}
 }
 .breadcrumbs a:hover,
 .breadcrumb a:hover,
@@ -263,6 +269,16 @@ h1, h2, h3, h4, h5, h6{
 }
 .readmore{
 	float: right;
+	a{
+		background-color: transparent;
+		background-image: none;
+		border: 0;
+		color: @linkColor;
+		filter: none;
+		&:hover{
+			background-color: transparent;
+		}
+	}
 }
 aside .readmore{
 	color: #666666;
@@ -457,10 +473,7 @@ body.is_chrome #bottom-menu .navbar-inner{
 #main .tabs h5 a,
 #main .tabs h6 a{
 	text-decoration:none;
-	margin-top: 10px;
 	line-height: normal;
-	padding-right:5px;
-	padding-left: 5px;
 }
 
 .navbar .nav > li > a:focus,
@@ -585,7 +598,7 @@ div.module div.moduletable div.custom ul.latestnews.nav li a {
 	border-bottom: 1px solid @color_three;
 }
 dl.nav-tabs{
-	padding-bottom: 8px;
+	padding-bottom: 4px;
 }
 dl.tabs.nav h3{
 	margin-top: 0;
@@ -593,9 +606,9 @@ dl.tabs.nav h3{
 }
 .nav-tabs .tabs a,
 #myTab.nav-tabs > li > a {
-	font-size: 1em;
-	font-weight: bold;
-	padding: 8px 12px;
+	font-size: 16px;
+	font-weight: normal;
+	padding: 5px 12px;
 }
 .nav-tabs .tabs a,
 #myTab.nav-tabs > li > a {
@@ -611,7 +624,9 @@ dl.tabs.nav h3{
 	background-color: #70777a;
 	border-color: @color_three @color_three transparent;
 	color: #ccc;
+	text-decoration: none;
 }
+.nav-tabs > .open h3 a, .nav-tabs > .open p a,
 .nav-tabs > .open h3 a,
 .nav-tabs > .open h3 a:hover  {
 	background-color: #FFFFFF;
@@ -714,5 +729,17 @@ body #sliderNav{
 	a{
 		font-size: 14px;
 		line-height: 12px;
+	}
+}
+//-----------------------------------
+
+[class^="newsflash"], [class*=" newsflash"]{
+	div.page-header{
+		border: 0;
+	}
+}
+#contact-form{
+	dd{
+		margin-bottom: 10px;
 	}
 }
