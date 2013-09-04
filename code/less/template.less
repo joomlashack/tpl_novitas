@@ -183,6 +183,9 @@ dl.article-info{
 }
 .breadcrumb{
 	padding: 0;
+	> li > .divider{
+		color: @textColor;
+	}
 }
 .filter-search.alert.alert-info{
 	background-color: #f5f5f5;
@@ -244,7 +247,9 @@ ul.category-module.nav h1{
 	font-size: 12px;
 }
 .hero-unit{
-	padding: 0;
+	.hero-unit{
+		padding: 0;
+	}
 }
 .wrapper-featured{
 	border-top:3px solid #000000;
@@ -600,18 +605,18 @@ div.module div.moduletable div.custom ul.latestnews.nav li a {
 dl.nav-tabs{
 	padding-bottom: 4px;
 }
-dl.tabs.nav h3{
+dl.tabs.nav h3,dl.tabs.nav p{
 	margin-top: 0;
 	margin-right: 2px;
 }
 .nav-tabs .tabs a,
-#myTab.nav-tabs > li > a {
+.nav-tabs > li > a {
 	font-size: 16px;
 	font-weight: normal;
 	padding: 5px 12px;
 }
 .nav-tabs .tabs a,
-#myTab.nav-tabs > li > a {
+.nav-tabs > li > a {
 	background-color: @color_three;
     border-color: @color_three;
 	color: #FFFFFF;
@@ -620,7 +625,7 @@ dl.tabs.nav h3{
 	border-color: transparent;
 }
 .nav-tabs .tabs a:hover,
-#myTab.nav-tabs > li > a:hover{
+.nav-tabs > li > a:hover{
 	background-color: #70777a;
 	border-color: @color_three @color_three transparent;
 	color: #ccc;
@@ -628,16 +633,18 @@ dl.tabs.nav h3{
 }
 .nav-tabs > .open h3 a, .nav-tabs > .open p a,
 .nav-tabs > .open h3 a,
-.nav-tabs > .open h3 a:hover  {
+.nav-tabs > .open h3 a:hover ,
+.nav-tabs > .open p a,
+.nav-tabs > .open p a:hover  {
 	background-color: #FFFFFF;
 	border-color: @color_three @color_three transparent;
 	color: @color_three !important;
 }
-#myTab.nav-tabs > .active > a,
-#myTab.nav-tabs > .active > a:hover{
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover{
 	background-color: transparent;
     border-color: @color_three @color_three white;
-    color: #E46C07;
+	color: @color_three !important;
 }
 ul.actions.dropdown-menu{
 	padding: 5px 0;
@@ -741,5 +748,15 @@ body #sliderNav{
 #contact-form{
 	dd{
 		margin-bottom: 10px;
+	}
+}
+.nav-tabs.nav-stacked > li > a{
+	background-color: @bodyBackground;
+	color: @linkColor;
+}
+#mod-finder-searchform{
+	label{
+		padding-left: .2em;
+		padding-right: .2em;
 	}
 }
