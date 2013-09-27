@@ -1,0 +1,43 @@
+@media (max-width: 979px){
+	.navbar-inverse .nav li.dropdown.open > .dropdown-toggle, 
+	.navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
+	.navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle{
+		background-color: @color_three;
+		color: @color_two;
+	}
+
+	.navbar-inverse {
+		.nav-collapse {
+			.dropdown-menu {
+				.active {
+					a {
+						color: @grayLight;
+						&:hover,
+						&:focus {
+							color: @grayLighter;
+						}
+					}
+				}
+			}
+		}
+	}
+	.nav-collapse {
+		.nav {
+			> li {
+				a:hover,
+				a:focus {
+					color: @color_three;
+				}
+			}
+		}
+		.dropdown-menu {
+			.active {
+				> a,
+				> a:hover,
+				> a:focus {
+					color: @grayLight;
+				}
+			}
+		}
+	}
+}
