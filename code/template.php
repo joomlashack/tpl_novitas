@@ -18,10 +18,6 @@ defined('_JEXEC') or die('Restricted access');
 <html>
 <head>
     <w:head />
-    <?php if ($this->document->params->get('responsive',1)): ?>
-         <link href="<?php echo $this->baseurl;?>/templates/<?php echo $this->document->template;?>/css/responsive.css" rel="stylesheet" type="text/css" media="screen" />
-         <link href="<?php echo $this->baseurl;?>/templates/<?php echo $this->document->template;?>/css/style-<?php echo $theme ?>.responsive.css" rel="stylesheet" type="text/css" media="screen" />
-    <?php endif; ?>
 </head>
 <body>
 
@@ -121,7 +117,7 @@ defined('_JEXEC') or die('Restricted access');
         <footer id="footer" <?php if ($this->params->get('stickyFooter',1)) : ?> class="sticky"<?php endif;?>>
             <?php if ($this->countModules('bottom-menu')) : ?>
                 <!-- bottom-menu -->
-                <w:nav containerClass="<?php echo $containerClass ?>" rowClass="<?php echo $gridMode;?>" name="bottom-menu" />
+                <w:nav containerClass="<?php echo $containerClass ?>" rowClass="<?php echo $gridMode;?>" name="bottom-menu" wrapClass="navbar-inverse" />
             <?php endif; ?>
             <div class="<?php echo $containerClass ?>">
                 <?php if ($this->countModules('footer')) : ?>
