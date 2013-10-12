@@ -55,16 +55,16 @@
 
 // Typography
 // -------------------------
-@sansFontFamily:        Helvetica, Arial, sans-serif;
-@serifFontFamily:       "Times New Roman", Times, serif;
+@sansFontFamily:        "Times New Roman", Helvetica, Arial, sans-serif;
+@serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
 @baseFontSize:          14px;
-@baseFontFamily:        @serifFontFamily;
+@baseFontFamily:        @sansFontFamily;
 @baseLineHeight:        20px;
-@altFontFamily:         Georgia, "Times New Roman", Times, serif;
+@altFontFamily:         @serifFontFamily;
 
-@headingsFontFamily:    @altFontFamily; // empty to use BS default, @baseFontFamily
+@headingsFontFamily:    @serifFontFamily; // empty to use BS default, @baseFontFamily
 @headingsFontWeight:    900;    // instead of browser default, bold
 @headingsColor:         @black; // empty to use BS default, @textColor
 
@@ -136,11 +136,11 @@
 @dropdownDividerBottom:         @white;
 
 @dropdownLinkColor:             @gray + #111;
-@dropdownLinkColorHover:        @white;
-@dropdownLinkColorActive:       @white;
+@dropdownLinkColorHover:        @black;
+@dropdownLinkColorActive:       @black;
 
-@dropdownLinkBackgroundActive:  @color_three;
-@dropdownLinkBackgroundHover:   @color_three;
+@dropdownLinkBackgroundActive:  @white;
+@dropdownLinkBackgroundHover:   @white;
 
 
 
