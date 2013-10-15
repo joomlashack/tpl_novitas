@@ -55,16 +55,16 @@
 
 // Typography
 // -------------------------
-@sansFontFamily:        "Times New Roman", Helvetica, Arial, sans-serif;
-@serifFontFamily:       Georgia, "Times New Roman", Times, serif;
+@sansFontFamily:        Helvetica, Arial, sans-serif;
+@serifFontFamily:       "Times New Roman", Times, serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
 @baseFontSize:          14px;
-@baseFontFamily:        @sansFontFamily;
+@baseFontFamily:        @serifFontFamily;
 @baseLineHeight:        20px;
-@altFontFamily:         @serifFontFamily;
+@altFontFamily:         Georgia, "Times New Roman", Times, serif;
 
-@headingsFontFamily:    @serifFontFamily; // empty to use BS default, @baseFontFamily
+@headingsFontFamily:    @altFontFamily; // empty to use BS default, @baseFontFamily
 @headingsFontWeight:    900;    // instead of browser default, bold
 @headingsColor:         @black; // empty to use BS default, @textColor
 
@@ -136,11 +136,11 @@
 @dropdownDividerBottom:         @white;
 
 @dropdownLinkColor:             @gray + #111;
-@dropdownLinkColorHover:        @black;
-@dropdownLinkColorActive:       @black;
+@dropdownLinkColorHover:        @white;
+@dropdownLinkColorActive:       @white;
 
-@dropdownLinkBackgroundActive:  @white;
-@dropdownLinkBackgroundHover:   @white;
+@dropdownLinkBackgroundActive:  @color_three;
+@dropdownLinkBackgroundHover:   @color_three;
 
 
 
@@ -198,7 +198,7 @@
 
 @navbarText:                      @black;
 @navbarLinkColor:                 @gray + #111;
-@navbarLinkColorHover:            @color_one;
+@navbarLinkColorHover:            @white;
 @navbarLinkColorActive:           @black;
 @navbarLinkBackgroundHover:       @color_three;
 @navbarLinkBackgroundActive:      transparent;
