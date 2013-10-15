@@ -1,7 +1,183 @@
+/* Phones and tablets */
 @media (max-width: 979px){
-	
+	.nav,
+	.navbar-inner,
+	.nav .navbar-inner,
+	.navbar .nav,
+	.navbar .nav .navbar-inner,
+	.nav-collapse .nav {
+		margin: 0 auto;
+		border: 0;
+			.nav-collapse {
+				border: 0;
+			}
+			.btn-navbar {
+			background-color: transparent;
+			background-image: none;
+			filter: none;
+			border: 0;
+			.icon-bar {
+				width: 40px;
+			}
+		}
+		li {
+			> a {
+				border: 0;
+				text-align: center;
+				color: @black;
+				.caret {
+					border-top-color: @black;
+				}
+				[class^="icon-"],
+				[class*=" icon-"] {
+					color: @black;
+				}
+				&:hover,
+				&:focus {
+					background-color: @navbarLinkBackgroundHover;
+					color: @navbarLinkColorHover;
+					.caret {
+						border-top-color: @navbarLinkColorHover;
+					}
+					[class^="icon-"],
+					[class*=" icon-"] {
+						color: @navbarLinkColorHover;
+					}
+				}
+			}
+			&.dropdown,
+			.dropdown-menu {
+				li {
+					> a {
+						border: 0;
+						color: @black;
+						.caret {
+							border-top-color: @black;
+						}
+						[class^="icon-"],
+						[class*=" icon-"] {
+							color: @black;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.navbar-inverse {
+		.nav,
+		.navbar-inner,
+		.nav .navbar-inner,
+		.navbar .nav,
+		.navbar .nav .navbar-inner,
+		.nav-collapse .nav {
+			.icon-bar {
+				background-color: @color_one;
+			}
+			li {
+				> a {
+					color: @navbarInverseLinkColor;
+					.caret {
+						border-top-color: @navbarInverseLinkColor;
+					}
+					[class^="icon-"],
+					[class*=" icon-"] {
+						color: @navbarInverseLinkColor;
+					}
+					&:hover,
+					&:focus {
+						background-color: @navbarInverseLinkBackgroundHover;
+					}
+				}
+				&.dropdown,
+				.dropdown-menu {
+					li {
+						> a {
+							color: @navbarInverseLinkColor;
+							.caret {
+								border-top-color: @navbarInverseLinkColor;
+							}
+							[class^="icon-"],
+							[class*=" icon-"] {
+								color: @navbarInverseLinkColor;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.navbar-transparent {
+		.nav,
+		.navbar-inner,
+		.nav .navbar-inner,
+		.navbar .nav,
+		.navbar .nav .navbar-inner {
+			.icon-bar {
+				background-color: @color_two;
+			}
+		}
+	}
+
+	.module {
+		.nav {
+			li {
+				> a {
+					text-align: left;
+					color: @linkColor;
+					.caret {
+						border-top-color: @linkColor;
+					}
+					[class^="icon-"],
+					[class*=" icon-"] {
+						color: @linkColor;
+					}					
+				}
+			}
+		}
+		.tabbable {
+			.nav {
+				> li {
+					> a {
+						color: @white;
+						.caret {
+							border-top-color: @white;
+						}
+						[class^="icon-"],
+						[class*=" icon-"] {
+							color: @white;
+						}					
+					}
+					&.active {
+						> a {
+							color: @black;
+							.caret {
+								border-top-color: @black;
+							}
+							[class^="icon-"],
+							[class*=" icon-"] {
+								color: @black;
+							}
+							&:hover {
+								color: @white;
+								.caret {
+									border-top-color: @white;
+								}
+								[class^="icon-"],
+								[class*=" icon-"] {
+									color: @white;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
+/* Tablets */
 @media(min-width:768px) and (max-width:979px){
 	.row .module_ms1.span12,
 	.row .module_ms2.span12 {
@@ -52,8 +228,10 @@
 	    width: 22px!important;
 	}
 	
-}     
-@media(max-width:768px){
+}
+
+/* Phones */
+@media(max-width:767px){
 	.row .module_ms1[class*="span"],
 	.row .module_ms2[class*="span"]{
 		width: auto !important;
@@ -74,14 +252,21 @@
 		margin-bottom: 0;
 	}
 }
-@media(max-width:1163px){
+
+/* Non-wide screens */
+@media(max-width:1200px){
+	.module_ms2.pull-left.col-one,
+	.module_ms2.pull-right.col-two{
+		width: auto;
+	}
+}
+
+/* Wide screens */
+@media(min-width:1200px){
 	aside #mod-search-searchword{
 		clear: both;
 		display: block;
 	}
-}
-
-@media(min-width:1200px){
 	
 	.row .module_ms1.span12,
 	.row .module_ms2.span12  {
@@ -131,10 +316,4 @@
 	.row .module_ms2.span1 {
 	    width: 50px!important;
 	}	
-}
-@media(max-width:1200px){
-	.module_ms2.pull-left.col-one,
-	.module_ms2.pull-right.col-two{
-		width: auto;
-	}
 }

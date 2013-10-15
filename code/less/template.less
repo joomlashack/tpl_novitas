@@ -107,12 +107,17 @@ ul.category-module.nav h1{
 	background-color: black;
 	background-image: none;
 	filter: none;
+	.footer-content {
+		a {
+			color: white;
+			text-decoration:underline;
+			text-shadow: none;
+			&:hover {
+				color: @linkColor;
+			}
+		}
+	}
 }
-// #footer a {
-// 	color: white;
-// 	text-decoration:underline;
-// 	text-shadow: none;
-// }
 
 .footer1, .footer2{
 	font-size: 12px;
@@ -268,7 +273,7 @@ aside .moduletext,
 .moduletable_ms2,
 .module_ms2,
 .moduletext_ms2{
-	background: url("../images/lines-news-top.jpg") repeat-x top left, url("../images/lines-news-bottom.jpg") repeat-x bottom left;
+	background: url("../../images/lines-news-top.jpg") repeat-x top left, url("../../images/lines-news-bottom.jpg") repeat-x bottom left;
 	padding: 10px;
 }
 .moduletable_ms2 a,
