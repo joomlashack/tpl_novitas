@@ -3,7 +3,8 @@
  * @package     Novitas
  * @subpackage  Functions
  *
- * @copyright   Copyright (C) 2005 - 2013 Joomlashack. Meritage Assets.  All rights reserved.
+ * @copyright   Copyright (C) 2005 - 2013 Joomlashack. Meritage Assets.
+ *              All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
@@ -16,7 +17,6 @@ $containerClass = 'container';
 if ($gridMode == 'row-fluid') {
     $containerClass = 'container-fluid';
 }
-
 
 $user = JFactory::getUser();
 $theme = JRequest::getVar('templateTheme',$user->getParam('theme',$this->params->get('style','red')));
