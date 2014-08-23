@@ -618,20 +618,20 @@ body #sliderNav{
 	padding-right:0;
 }
 
+.navbar{
+	li{
+		> a{
+			border-left: 1px solid #CCCCCC;
+		}
+	}
+}
+
 .nav,
 .navbar-inner,
 .nav .navbar-inner,
 .navbar .nav,
 .navbar .nav .navbar-inner {
 	li {
-		> a {
-			border-left: 1px solid #CCCCCC;
-			-webkit-text-shadow: none;
-			-moz-text-shadow: none;
-			-ms-text-shadow: none;
-			-o-text-shadow: none;
-			text-shadow: none;
-		}
 		&.active {
 			> a {
 				&:hover,
@@ -641,7 +641,7 @@ body #sliderNav{
 			}
 		}
 		.dropdown-menu {
-			border-radius: 0px;
+			border-radius: 0;
 			box-shadow: 0 0 0;
 			padding: 0;
 			border: 1px solid #CCCCCC;
@@ -655,7 +655,6 @@ body #sliderNav{
 			}
 			li {
 				> a {
-					border-left: 0;
 					border-top: 1px solid #CCCCCC;
 					margin: 0 10px;
 					padding: 4px;
@@ -694,60 +693,62 @@ body #sliderNav{
 	}
 }
 
-.nav.nav-pills {
-	li {
-		> a {
-			border-left: 0;
+.nav{
+	&.nav-tabs {
+		> li {
+			> a {
+				color: @white;
+				.caret {
+					border-top-color: @white;
+				}
+				[class^="icon-"],
+				[class*=" icon-"] {
+					color: @white;
+				}
+				&:hover,
+				&:focus {
+					color: @black;
+					.caret {
+						border-top-color: @black;
+					}
+					[class^="icon-"],
+					[class*=" icon-"] {
+						color: @black;
+					}
+				}
+			}
+			&.active {
+				> a {
+					&:hover,
+					&:focus {
+						color: @white;
+						.caret {
+							border-top-color: @white;
+						}
+						[class^="icon-"],
+						[class*=" icon-"] {
+							color: @white;
+						}
+					}
+				}
+			}
+		}
+	}
+	&.nav-list{
+		li {
+			> a {
+				text-shadow: none;
+			}
+
 		}
 	}
 }
 
-.nav.nav-tabs {
-	> li {
-		> a {
-			color: @white;
-			.caret {
-				border-top-color: @white;
-			}
-			[class^="icon-"],
-			[class*=" icon-"] {
-				color: @white;
-			}
-			&:hover,
-			&:focus {
-				color: @black;
-				.caret {
-					border-top-color: @black;
-				}
-				[class^="icon-"],
-				[class*=" icon-"] {
-					color: @black;
-				}
-			}
-		}
-		&.active {
-			> a {
-				&:hover,
-				&:focus {
-					color: @white;
-					.caret {
-						border-top-color: @white;
-					}
-					[class^="icon-"],
-					[class*=" icon-"] {
-						color: @white;
-					}
-				}
-			}			
-		}
-	}
-}
 
 .module {
 	.nav {
 		li {
 			> a {
-				border-left: 0;
 				.caret {
 					right: 15px;
 				}
