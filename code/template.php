@@ -44,7 +44,6 @@ defined('_JEXEC') or die('Restricted access');
             <header id="header">
                 <div class="<?php echo $gridMode; ?> clearfix">
                     <w:logo name="top" />
-                    <div class="clear"></div>
                 </div>
             </header>
 
