@@ -469,9 +469,6 @@ div.custom ul.latestnews.nav li a {
 		margin-bottom: -1px;
 	}
 }
-dl.nav-tabs{
-	padding-bottom: 4px;
-}
 dl.tabs.nav h3,dl.tabs.nav p{
 	margin-top: 0;
 	margin-right: 2px;
@@ -490,6 +487,15 @@ dl.tabs.nav h3,dl.tabs.nav p{
 	border-style: solid;
 	border-width: 1px;
 	border-color: transparent;
+}
+.nav-tabs dt.tabs {
+	margin-bottom: -1px;
+	> span{
+		display: block;
+		a{
+			display: block;
+		}
+	}
 }
 .nav-tabs .tabs a:hover,
 .nav-tabs > li > a:hover{
