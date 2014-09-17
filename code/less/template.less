@@ -777,43 +777,71 @@ body #sliderNav{
 }
 
 .navbar-inverse {
-	.nav,
-	.navbar-inner,
-	.nav .navbar-inner,
-	.navbar .nav,
-	.navbar .nav .navbar-inner {
+	.nav{
 		li {
 			> a {
 				border-left: 0;
 				font-family: @altFontFamily;
 				letter-spacing: 1px;
 			}
+			&.active{
+				> a{
+					&:hover,
+					&:focus{
+						background-color: transparent;
+						color: @navbarInverseLinkColorActive;
+
+						.caret {
+							border-top-color: @navbarLinkColorActive;
+						}
+						[class^="icon-"],
+						[class*=" icon-"] {
+							color: @navbarLinkColorActive;
+						}
+					}
+				}
+			}
+
 			.dropdown-menu {
 				li {
 					> a {
 						font-family: @baseFontFamily;
 						letter-spacing: inherit;
 					}
+					&.active{
+						> a{
+							background-color: transparent;
+							color: @dropdownLinkColorActive;
+
+							.caret {
+								border-top-color: dropdownLinkColorActive;
+							}
+							[class^="icon-"],
+							[class*=" icon-"] {
+								color: dropdownLinkColorActive;
+							}
+
+							&:hover,
+							&:focus{
+								background-color: transparent;
+								color: @dropdownLinkColorActive;
+
+								.caret {
+									border-top-color: dropdownLinkColorActive;
+								}
+								[class^="icon-"],
+								[class*=" icon-"] {
+									color: dropdownLinkColorActive;
+								}
+							}
+						}
+					}
+
 				}
 			}
 		}
 	}
 
-	.navbar{
-		.nav{
-			> li{
-				&.active{
-					> a{
-						&:hover,
-						&:focus{
-							background-color: transparent;
-							color: @navbarInverseLinkColorActive;
-						}
-					}
-				}
-			}
-		}
-	}
 }
 
 .nav{
