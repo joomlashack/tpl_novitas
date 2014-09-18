@@ -805,6 +805,28 @@ body #sliderNav{
 		li {
 			> a {
 				border-left: 0;
+
+				.caret {
+					border-top-color: @navbarLinkColor;
+				}
+				[class^="icon-"],
+				[class*=" icon-"] {
+					color: @navbarLinkColor;
+				}
+			}
+			&.active{
+				> a{
+					color: @navbarLinkColor;
+
+					.caret {
+						border-top-color: @navbarLinkColor;
+					}
+
+					[class^="icon-"],
+					[class*=" icon-"] {
+						color: @navbarLinkColor;
+					}
+				}
 			}
 		}
 	}
