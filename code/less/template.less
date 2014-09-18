@@ -508,7 +508,7 @@ dl.tabs.nav h3,dl.tabs.nav p{
 .nav-tabs > .open p a,
 .nav-tabs > .open h3 a:hover ,
 .nav-tabs > .open p a:hover  {
-	background-color: #FFFFFF;
+	background-color: @bodyBackground;
 	border-color: @color_three @color_three transparent;
 	color: @color_three;
 }
@@ -519,7 +519,13 @@ dl.tabs.nav h3,dl.tabs.nav p{
     border-color: @color_three @color_three white;
 	color: @color_three;
 }
-
+.bs-docs-example{
+	.nav.nav-tabs > li.active > a,
+	.nav.nav-tabs > li.active > a:hover,
+	.nav.nav-tabs > li.active > a:focus{
+		background-color: @white;
+	}
+}
 
 .tabs-below>.nav.nav-tabs,
 .tabs-right>.nav.nav-tabs,
