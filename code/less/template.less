@@ -732,6 +732,11 @@ body #sliderNav{
 			}
 		}
 	}
+	.divider-vertical{
+		margin: 0;
+		border-left-color: @black;
+		border-right-color: @black;
+	}
 }
 
 .nav,
@@ -776,6 +781,19 @@ body #sliderNav{
 							border-top: 0;
 						}
 					}
+				}
+			}
+		}
+	}
+}
+
+.nav{
+	li {
+		&.active{
+			> a{
+				&:hover,
+				&:focus{
+					background-color: transparent;
 				}
 			}
 		}
