@@ -1088,3 +1088,42 @@ body {
 .dropdown-menu .divider{
 	display: none;
 }
+
+// ----------------------------------------------------------------------------------
+// Shackslides 3
+
+#featured , #above-content {
+    div.jss-slider .jss-navigation {
+        .jss-navigation-buttons {
+            [class*='owl-'] {
+              	border-color: @white;
+                border-width: 4px;
+                height: 23px;
+                width: 23px;
+            }
+        }
+
+        .jss-navigation-dots {
+            .owl-dot {
+                > div {
+                    .box-shadow(none);
+                    background-color: @color_one;
+                    height: 15px;
+                    width: 15px;
+                }
+
+                &.active {
+                    > div {
+	                    background-color: darken(@color_one, 25%);
+
+                        &:after {
+                            background-color: transparent;
+                            content: none;
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
