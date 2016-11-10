@@ -23,26 +23,26 @@ defined('_JEXEC') or die('Restricted access');
     <body>
 
         <?php if ($this->countModules('toolbar')) : ?>
-        <w:nav containerClass="<?php echo $containerClass ?>" rowClass="<?php echo $gridMode;?>" wrapClass="navbar-fixed-top navbar-inverse" type="toolbar" name="toolbar" />
+        <w:nav containerClass="<?php echo $wrightContainerClass ?>" rowClass="<?php echo $wrightGridMode;?>" wrapClass="navbar-fixed-top navbar-inverse" type="toolbar" name="toolbar" />
         <?php endif; ?>
 
         <?php if ($this->countModules('menu')) : ?>
         <!-- menu -->
-        <w:nav containerClass="<?php echo $containerClass ?>" rowClass="<?php echo $gridMode;?>"  name="menu" />
+        <w:nav containerClass="<?php echo $wrightContainerClass ?>" rowClass="<?php echo $wrightGridMode;?>"  name="menu" />
         <?php endif; ?>
 
-        <div class="<?php echo $containerClass ?>">
+        <div class="<?php echo $wrightContainerClass ?>">
             <?php if ($this->countModules('featured')) : ?>
              <!-- featured -->
              <div class="wrapper-featured">
                 <div id="featured">
-                    <w:module type="<?php echo $gridMode; ?>" name="featured" chrome="wrightflexgrid" />
+                    <w:module type="<?php echo $wrightGridMode; ?>" name="featured" chrome="wrightflexgrid" />
                 </div>
              </div>
             <?php endif; ?>
 
             <header id="header">
-                <div class="<?php echo $gridMode; ?> clearfix">
+                <div class="<?php echo $wrightGridMode; ?> clearfix">
                     <w:logo name="top" />
                 </div>
             </header>
@@ -50,13 +50,13 @@ defined('_JEXEC') or die('Restricted access');
             <?php if ($this->countModules('grid-top')) : ?>
             <!-- grid-top -->
             <div id="grid-top">
-                <w:module type="<?php echo $gridMode; ?>" name="grid-top" chrome="wrightflexgrid" />
+                <w:module type="<?php echo $wrightGridMode; ?>" name="grid-top" chrome="wrightflexgrid" />
             </div>
             <?php endif; ?>
             <?php if ($this->countModules('grid-top2')) : ?>
             <!-- grid-top2 -->
             <div id="grid-top2">
-                <w:module type="<?php echo $gridMode; ?>" name="grid-top2" chrome="wrightflexgrid" />
+                <w:module type="<?php echo $wrightGridMode; ?>" name="grid-top2" chrome="wrightflexgrid" />
             </div>
             <?php endif; ?>
 
@@ -97,13 +97,13 @@ defined('_JEXEC') or die('Restricted access');
             <?php if ($this->countModules('grid-bottom')) : ?>
             <!-- grid-bottom -->
             <div id="grid-bottom" >
-                <w:module type="<?php echo $gridMode; ?>" name="grid-bottom" chrome="wrightflexgrid" />
+                <w:module type="<?php echo $wrightGridMode; ?>" name="grid-bottom" chrome="wrightflexgrid" />
             </div>
             <?php endif; ?>
             <?php if ($this->countModules('grid-bottom2')) : ?>
             <!-- grid-bottom2 -->
             <div id="grid-bottom2" >
-                <w:module type="<?php echo $gridMode; ?>" name="grid-bottom2" chrome="wrightflexgrid" />
+                <w:module type="<?php echo $wrightGridMode; ?>" name="grid-bottom2" chrome="wrightflexgrid" />
             </div>
             <?php endif; ?>
         </div>
@@ -112,12 +112,12 @@ defined('_JEXEC') or die('Restricted access');
             <footer id="footer" <?php if ($this->params->get('stickyFooter',1)) : ?> class="sticky"<?php endif;?>>
                 <?php if ($this->countModules('bottom-menu')) : ?>
                 <!-- bottom-menu -->
-                <w:nav containerClass="<?php echo $containerClass ?>" rowClass="<?php echo $gridMode;?>" name="bottom-menu" wrapClass="navbar-transparent" />
+                <w:nav containerClass="<?php echo $wrightContainerClass ?>" rowClass="<?php echo $wrightGridMode;?>" name="bottom-menu" wrapClass="navbar-transparent" />
                 <?php endif; ?>
-                <div class="<?php echo $containerClass ?> footer-content">
+                <div class="<?php echo $wrightContainerClass ?> footer-content">
                     <?php if ($this->countModules('footer')) : ?>
                     <br>
-                    <w:module type="<?php echo $gridMode; ?>" name="footer" />
+                    <w:module type="<?php echo $wrightGridMode; ?>" name="footer" />
                     <?php endif; ?>
                     <w:footer />
                 </div>
