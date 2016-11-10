@@ -63,14 +63,14 @@ defined('_JEXEC') or die('Restricted access');
             <div id="main-content" class="row-fluid">
                 <!-- sidebar1 -->
                 <aside id="sidebar1">
-                    <w:module name="sidebar1" chrome="xhtml" />
+                    <w:module name="sidebar1" />
                 </aside>
                 <!-- main -->
                 <section id="main">
                     <?php if ($this->countModules('above-content')) : ?>
                     <!-- above-content -->
                     <div id="above-content">
-                        <w:module type="none" name="above-content" chrome="xhtml" />
+                        <w:module type="none" name="above-content" />
                     </div>
                     <?php endif; ?>
                     <?php if ($this->countModules('breadcrumbs')) : ?>
@@ -84,13 +84,13 @@ defined('_JEXEC') or die('Restricted access');
                     <?php if ($this->countModules('below-content')) : ?>
                     <!-- below-content -->
                     <div id="below-content">
-                        <w:module type="none" name="below-content" chrome="xhtml" />
+                        <w:module type="none" name="below-content" />
                     </div>
                     <?php endif; ?>
                 </section>
                 <!-- sidebar2 -->
                 <aside id="sidebar2">
-                    <w:module name="sidebar2" chrome="xhtml" />
+                    <w:module name="sidebar2" />
                 </aside>
             </div>
 
@@ -117,7 +117,7 @@ defined('_JEXEC') or die('Restricted access');
                 <div class="<?php echo $containerClass ?> footer-content">
                     <?php if ($this->countModules('footer')) : ?>
                     <br>
-                    <w:module type="<?php echo $gridMode; ?>" name="footer" chrome="xhtml" />
+                    <w:module type="<?php echo $gridMode; ?>" name="footer" />
                     <?php endif; ?>
                     <w:footer />
                 </div>
