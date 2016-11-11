@@ -97,9 +97,9 @@
 @baseLineHeight:        20px;
 @altFontFamily:         Georgia, "Times New Roman", Times, serif;
 
-@headingsFontFamily:    @altFontFamily; // empty to use BS default, @baseFontFamily
+@headingsFontFamily:    @sansFontFamily; // empty to use BS default, @baseFontFamily
 @headingsFontWeight:    900;    // instead of browser default, bold
-@headingsColor:         @black; // empty to use BS default, @textColor
+@headingsColor:         @textColor; // empty to use BS default, @textColor
 
 
 // Component sizing
@@ -114,9 +114,9 @@
 @paddingSmall:          2px 10px;  // 26px
 @paddingMini:           0 6px;   // 22px
 
-@baseBorderRadius:      4px;
-@borderRadiusLarge:     6px;
-@borderRadiusSmall:     3px;
+@baseBorderRadius:      0;
+@borderRadiusLarge:     0;
+@borderRadiusSmall:     0;
 
 
 // Tables
@@ -227,27 +227,27 @@
 @navbarHeight:                    40px;
 @navbarBackgroundHighlight:       @white;
 @navbarBackground:                @white;
-@navbarBorder:                    darken(@navbarBackground, 12%);
+@navbarBorder:                    transparent;
 
-@navbarText:                      @black;
+@navbarText:                      @color_five;
 @navbarLinkColor:                 @gray + #111;
 @navbarLinkColorHover:            @white;
-@navbarLinkColorActive:           @black;
-@navbarLinkBackgroundHover:       @color_three;
-@navbarLinkBackgroundActive:      transparent;
+@navbarLinkColorActive:           @navbarLinkColorHover;
+@navbarLinkBackgroundHover:       @color_five;
+@navbarLinkBackgroundActive:      @navbarLinkBackgroundHover;
 
 @navbarBrandColor:                @navbarLinkColor;
 
 // Inverted navbar
-@navbarInverseBackground:                @color_one;
-@navbarInverseBackgroundHighlight:       @color_one;
-@navbarInverseBorder:                    @color_one;
+@navbarInverseBackground:                @color_five;
+@navbarInverseBackgroundHighlight:       @color_five;
+@navbarInverseBorder:                    @color_five;
 
 @navbarInverseText:                      @white;
 @navbarInverseLinkColor:                 @white;
 @navbarInverseLinkColorHover:            @white;
 @navbarInverseLinkColorActive:           @black;
-@navbarInverseLinkBackgroundHover:       @color_three;
+@navbarInverseLinkBackgroundHover:       @color_one;
 @navbarInverseLinkBackgroundActive:      @color_one;
 
 @navbarInverseSearchBackground:          lighten(@navbarInverseBackground, 25%);
