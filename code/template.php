@@ -23,7 +23,7 @@ defined('_JEXEC') or die('Restricted access');
     <body>
 
         <?php if ($this->countModules('toolbar')) : ?>
-        <w:nav containerClass="<?php echo $wrightContainerClass ?>" rowClass="row-fluid" wrapClass="navbar-fixed-top navbar-inverse" type="toolbar" name="toolbar" />
+        <w:nav containerClass="<?php echo $wrightContainerClass ?>" wrapClass="navbar-fixed-top navbar-inverse" type="toolbar" name="toolbar" />
         <?php endif; ?>
         <div class="<?php echo $wrightContainerClass ?>">
             <header id="header" class="p-t-1 p-b-1 m-t-2 m-b-2 ">
@@ -34,12 +34,12 @@ defined('_JEXEC') or die('Restricted access');
         </div>
         <?php if ($this->countModules('menu')) : ?>
         <!-- menu -->
-        <w:nav containerClass="<?php echo $wrightContainerClass; ?>" rowClass="row-fluid" wrapClass="navbar-inverse" name="menu" />
+        <w:nav containerClass="bg-color-five m-b-2" wrapClass="navbar-inverse <?php echo $wrightContainerClass; ?> m-b-0" name="menu" />
         <?php endif; ?>
         <div class="<?php echo $wrightContainerClass ?>">
             <?php if ($this->countModules('featured')) : ?>
              <!-- featured -->
-             <div class="wrapper-featured m-t-2 m-b-2">
+             <div class="wrapper-featured m-b-2">
                 <div id="featured" class="lead p-t-1 p-b-1 m-b-0">
                     <w:module type="row-fluid" name="featured" chrome="wrightflexgrid" />
                 </div>
