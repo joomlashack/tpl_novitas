@@ -19,6 +19,9 @@ defined('_JEXEC') or die('Restricted access');
 <html>
     <head>
         <w:head />
+        <link href="//fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,600,700" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Prociono" rel="stylesheet">
     </head>
     <body>
 
