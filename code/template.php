@@ -25,12 +25,17 @@ defined('_JEXEC') or die('Restricted access');
         <?php if ($this->countModules('toolbar')) : ?>
         <w:nav containerClass="<?php echo $wrightContainerClass ?>" rowClass="row-fluid" wrapClass="navbar-fixed-top navbar-inverse" type="toolbar" name="toolbar" />
         <?php endif; ?>
-
+        <div class="<?php echo $wrightContainerClass ?>">
+            <header id="header" class="p-t-1 p-b-1 m-t-2 m-b-2 ">
+                <div class="row-fluid">
+                    <w:logo name="top" />
+                </div>
+            </header>
+        </div>
         <?php if ($this->countModules('menu')) : ?>
         <!-- menu -->
-        <w:nav containerClass="<?php echo $wrightContainerClass ?>" rowClass="row-fluid"  name="menu" />
+        <w:nav containerClass="<?php echo $wrightContainerClass; ?>" rowClass="row-fluid" wrapClass="navbar-inverse" name="menu" />
         <?php endif; ?>
-
         <div class="<?php echo $wrightContainerClass ?>">
             <?php if ($this->countModules('featured')) : ?>
              <!-- featured -->
@@ -40,12 +45,6 @@ defined('_JEXEC') or die('Restricted access');
                 </div>
              </div>
             <?php endif; ?>
-
-            <header id="header" class="p-t-1 p-b-1 m-b-2">
-                <div class="row-fluid">
-                    <w:logo name="top" />
-                </div>
-            </header>
 
             <?php if ($this->countModules('grid-top')) : ?>
             <!-- grid-top -->
