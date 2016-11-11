@@ -25,13 +25,13 @@ defined('_JEXEC') or die('Restricted access');
         <?php if ($this->countModules('toolbar')) : ?>
         <w:nav containerClass="<?php echo $wrightContainerClass ?>" wrapClass="navbar-fixed-top navbar-inverse" type="toolbar" name="toolbar" />
         <?php endif; ?>
-        <div class="<?php echo $wrightContainerClass ?>">
-            <header id="header" class="p-t-1 p-b-1 m-t-2 m-b-2 ">
+        <header id="header" class="p-t-1 p-b-1 m-t-2 m-b-2 border-double">
+            <div class="<?php echo $wrightContainerClass ?>">
                 <div class="row-fluid">
                     <w:logo name="top" />
                 </div>
-            </header>
-        </div>
+            </div>
+        </header>
         <?php if ($this->countModules('menu')) : ?>
         <!-- menu -->
         <w:nav containerClass="bg-color-five m-b-2" wrapClass="navbar-inverse <?php echo $wrightContainerClass; ?> m-b-0" name="menu" />
