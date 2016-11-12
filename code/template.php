@@ -51,18 +51,18 @@ defined('_JEXEC') or die('Restricted access');
 
             <?php if ($this->countModules('grid-top')) : ?>
             <!-- grid-top -->
-            <div id="grid-top">
+            <div id="grid-top" class="m-b-2">
                 <w:module type="row-fluid" name="grid-top" chrome="wrightflexgrid" />
             </div>
             <?php endif; ?>
             <?php if ($this->countModules('grid-top2')) : ?>
             <!-- grid-top2 -->
-            <div id="grid-top2">
+            <div id="grid-top2" class="m-b-2">
                 <w:module type="row-fluid" name="grid-top2" chrome="wrightflexgrid" />
             </div>
             <?php endif; ?>
 
-            <div id="main-content" class="row-fluid">
+            <div id="main-content" class="row-fluid m-b-2">
                 <!-- sidebar1 -->
                 <aside id="sidebar1">
                     <w:module name="sidebar1" />
@@ -71,7 +71,7 @@ defined('_JEXEC') or die('Restricted access');
                 <section id="main">
                     <?php if ($this->countModules('above-content')) : ?>
                     <!-- above-content -->
-                    <div id="above-content">
+                    <div id="above-content" class="m-b-2">
                         <w:module type="none" name="above-content" />
                     </div>
                     <?php endif; ?>
@@ -85,7 +85,7 @@ defined('_JEXEC') or die('Restricted access');
                     <w:content />
                     <?php if ($this->countModules('below-content')) : ?>
                     <!-- below-content -->
-                    <div id="below-content">
+                    <div id="below-content" class="m-t-2">
                         <w:module type="none" name="below-content" />
                     </div>
                     <?php endif; ?>
@@ -98,13 +98,13 @@ defined('_JEXEC') or die('Restricted access');
 
             <?php if ($this->countModules('grid-bottom')) : ?>
             <!-- grid-bottom -->
-            <div id="grid-bottom" >
+            <div id="grid-bottom" class="m-b-2">
                 <w:module type="row-fluid" name="grid-bottom" chrome="wrightflexgrid" />
             </div>
             <?php endif; ?>
             <?php if ($this->countModules('grid-bottom2')) : ?>
             <!-- grid-bottom2 -->
-            <div id="grid-bottom2" >
+            <div id="grid-bottom2" class="m-b-2">
                 <w:module type="row-fluid" name="grid-bottom2" chrome="wrightflexgrid" />
             </div>
             <?php endif; ?>
