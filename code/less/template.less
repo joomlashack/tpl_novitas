@@ -154,20 +154,9 @@ h1, h2, h3, h4, h5, h6{
 
 .readmore{
 	float: right;
-
-	a {
-		border: 0;
-
-		&:hover{
-		}
-	}
 }
-aside .readmore{
-	color: #666666;
-	font-family: @sansFontFamily;
-	text-transform: uppercase;
-	clear: both;
-}
+
+
 
 aside input,
 aside textarea,
@@ -187,18 +176,19 @@ aside .uneditable-input{
 .module_ms1,
 .moduletext_ms1{
 	background-color:@color_four;
-	outline: 1px solid #CCCCCC;
-	padding:10px;
-	color: black;
-
+	.p-t-1;
+	.p-r-1;
+	.p-b-1;
+	.p-l-1;
 }
+
 .moduletable_ms1 h3,
 .module_ms1 h3,
 .moduletext_ms1 h3
 {
-	padding-top:3px;
-	color: #DD0000;
-	border-top:8px solid #DD0000;
+	.p-t-1;
+	color: @color_one;
+	border-top:8px solid @color_one;
 }
 .moduletable_ms2,
 .module_ms2,
@@ -220,6 +210,7 @@ aside .uneditable-input{
 .moduletext_ms3{
 	border-bottom: 1px solid #CCCCCC;
 	padding: 10px 0;
+	align-self: baseline;
 }
 .moduletable_ms3 h3,
 .module_ms3 h3,
@@ -254,6 +245,16 @@ aside .uneditable-input{
 
 .btn {
 	border-radius: 2px 2px 2px 2px !important;
+	color: @color_two;
+	text-shadow: none;
+
+	&:hover, &:focus {
+		color: @color_two;
+	}
+}
+
+.well {
+	border: 0;
 }
 
 ::selection{
@@ -509,4 +510,14 @@ body {
 
 [class*="newsflash"] {
 	.clearfix();
+
+	.readmore{
+		clear: both;
+		color: lighten(@color_five, 30%);
+		text-transform: uppercase;
+
+		&:hover, &:focus {
+			color: @textColor;
+		}
+	}
 }
