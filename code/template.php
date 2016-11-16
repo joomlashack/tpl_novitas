@@ -42,7 +42,7 @@ defined('_JEXEC') or die('Restricted access');
         <div class="<?php echo $wrightContainerClass ?>">
             <?php if ($this->countModules('featured')) : ?>
              <!-- featured -->
-             <div class="wrapper-featured m-b-2">
+             <div class="wrapper-featured">
                 <div id="featured" class="lead p-t-1 p-b-1 m-b-0">
                     <w:module type="row-fluid" name="featured" chrome="wrightflexgrid" />
                 </div>
@@ -51,13 +51,13 @@ defined('_JEXEC') or die('Restricted access');
 
             <?php if ($this->countModules('grid-top')) : ?>
             <!-- grid-top -->
-            <div id="grid-top" class="m-b-2">
+            <div id="grid-top">
                 <w:module type="row-fluid" name="grid-top" chrome="wrightflexgrid" />
             </div>
             <?php endif; ?>
             <?php if ($this->countModules('grid-top2')) : ?>
             <!-- grid-top2 -->
-            <div id="grid-top2" class="m-b-2">
+            <div id="grid-top2">
                 <w:module type="row-fluid" name="grid-top2" chrome="wrightflexgrid" />
             </div>
             <?php endif; ?>
@@ -98,13 +98,13 @@ defined('_JEXEC') or die('Restricted access');
 
             <?php if ($this->countModules('grid-bottom')) : ?>
             <!-- grid-bottom -->
-            <div id="grid-bottom" class="m-b-2">
+            <div id="grid-bottom">
                 <w:module type="row-fluid" name="grid-bottom" chrome="wrightflexgrid" />
             </div>
             <?php endif; ?>
             <?php if ($this->countModules('grid-bottom2')) : ?>
             <!-- grid-bottom2 -->
-            <div id="grid-bottom2" class="m-b-2">
+            <div id="grid-bottom2">
                 <w:module type="row-fluid" name="grid-bottom2" chrome="wrightflexgrid" />
             </div>
             <?php endif; ?>
@@ -112,15 +112,17 @@ defined('_JEXEC') or die('Restricted access');
 
         <div class="wrapper-footer">
             <footer id="footer" <?php if ($this->params->get('stickyFooter',1)) : ?> class="sticky"<?php endif;?>>
-                <?php if ($this->countModules('bottom-menu')) : ?>
-                <!-- bottom-menu -->
-                <w:nav containerClass="<?php echo $wrightContainerClass ?>" rowClass="row-fluid" name="bottom-menu" wrapClass="navbar-transparent" />
-                <?php endif; ?>
-                <div class="<?php echo $wrightContainerClass ?> footer-content p-t-2">
-                    <?php if ($this->countModules('footer')) : ?>
-                    <w:module type="row-fluid" name="footer" />
+                <div class="hero-unit p-t-1 p-b-1">
+                    <?php if ($this->countModules('bottom-menu')) : ?>
+                    <!-- bottom-menu -->
+                    <w:nav containerClass="<?php echo $wrightContainerClass ?>" rowClass="row-fluid" name="bottom-menu" wrapClass="navbar-transparent" />
                     <?php endif; ?>
-                    <w:footer />
+                    <div class="<?php echo $wrightContainerClass ?> footer-content">
+                        <?php if ($this->countModules('footer')) : ?>
+                        <w:module type="row-fluid" name="footer" />
+                        <?php endif; ?>
+                        <w:footer />
+                    </div>
                 </div>
             </footer>
         </div>
