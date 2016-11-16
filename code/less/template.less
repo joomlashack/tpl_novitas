@@ -127,6 +127,14 @@ a:focus{
 	.box-sizing(border-box);
 	font-size: @baseFontSize + 4;
 	line-height: @baseLineHeight + 4;
+
+	a {
+		color: @textColor;
+
+		&:hover, &:focus {
+			text-shadow: 0 1px 2px @grayDark;
+		}
+	}
 }
 
 #featured{
@@ -157,7 +165,7 @@ a:focus{
 }
 
 h1, h2, h3, h4, h5, h6{
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	margin: 0 0 1rem;
 }
 
@@ -179,9 +187,11 @@ aside .uneditable-input{
 	padding: 10px;
 }
 
-#main + aside {
-	border-left: 1px solid @hrBorder;
-	padding-left: 1rem;
+.home {
+	#main + aside {
+		border-left: 1px solid @hrBorder;
+		padding-left: 1rem;
+	}
 }
 
 [class*="module"] {
