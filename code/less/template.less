@@ -137,6 +137,11 @@ a:focus{
 	}
 }
 
+footer .hero-unit {
+	font-size: @baseFontSize;
+	line-height: @baseLineHeight;
+}
+
 #featured{
 	.rm-margin-children();
 }
@@ -195,10 +200,10 @@ aside .uneditable-input{
 }
 
 [class*="module"] {
-	.m-b-2;
+	margin-bottom: 2rem;
 
 	&:last-child {
-		.m-b-2;
+		margin-bottom: 2rem;
 	}
 }
 
@@ -264,12 +269,6 @@ aside {
 
 .row, .row-fluid {
 	display: flex;
-}
-
-.wrapper-footer {
-	.row, .row-fluid {
-		flex-direction: column;
-	}
 }
 
 #mod-search-searchword {
