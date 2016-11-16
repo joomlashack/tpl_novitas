@@ -112,7 +112,7 @@ defined('_JEXEC') or die('Restricted access');
 
         <div class="wrapper-footer">
             <footer id="footer" <?php if ($this->params->get('stickyFooter',1)) : ?> class="sticky"<?php endif;?>>
-                <div class="hero-unit p-t-1 p-b-1">
+                <div class="hero-unit p-t-2 p-b-2 m-b-0">
                     <?php if ($this->countModules('bottom-menu')) : ?>
                     <!-- bottom-menu -->
                     <w:nav containerClass="<?php echo $wrightContainerClass ?>" rowClass="row-fluid" name="bottom-menu" wrapClass="navbar-transparent" />
