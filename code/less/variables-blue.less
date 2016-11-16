@@ -88,18 +88,18 @@
 
 // Typography
 // -------------------------
-@sansFontFamily:        Helvetica, Arial, sans-serif;
-@serifFontFamily:       "Times New Roman", Times, serif;
+@sansFontFamily:        'Prociono', Helvetica, Arial, sans-serif;
+@serifFontFamily:       'Cormorant Garamond', "Times New Roman", Times, serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
-@baseFontSize:          14px;
+@baseFontSize:          18px;
 @baseFontFamily:        @serifFontFamily;
-@baseLineHeight:        20px;
+@baseLineHeight:        22px;
 @altFontFamily:         Georgia, "Times New Roman", Times, serif;
 
-@headingsFontFamily:    @altFontFamily; // empty to use BS default, @baseFontFamily
+@headingsFontFamily:    @sansFontFamily; // empty to use BS default, @baseFontFamily
 @headingsFontWeight:    900;    // instead of browser default, bold
-@headingsColor:         @black; // empty to use BS default, @textColor
+@headingsColor:         @textColor; // empty to use BS default, @textColor
 
 
 // Component sizing
@@ -114,9 +114,9 @@
 @paddingSmall:          2px 10px;  // 26px
 @paddingMini:           0 6px;   // 22px
 
-@baseBorderRadius:      4px;
-@borderRadiusLarge:     6px;
-@borderRadiusSmall:     3px;
+@baseBorderRadius:      0;
+@borderRadiusLarge:     0;
+@borderRadiusSmall:     0;
 
 
 // Tables
@@ -128,11 +128,11 @@
 
 // Buttons
 // -------------------------
-@btnBackground:                     #ccc;
-@btnBackgroundHighlight:            darken(#ccc, 10%);
-@btnBorder:                         #ccc;
+@btnBackground:                     lighten(@textColor, 30%);
+@btnBackgroundHighlight:            @textColor;
+@btnBorder:                         @textColor;
 
-@btnPrimaryBackground:              @black;
+@btnPrimaryBackground:              @color_one;
 @btnPrimaryBackgroundHighlight:     @black;
 
 @btnInfoBackground:                 #5bc0de;
@@ -154,7 +154,7 @@
 // Forms
 // -------------------------
 @inputBackground:               @white;
-@inputBorder:                   #ccc;
+@inputBorder:                   #aaa;
 @inputBorderRadius:             @baseBorderRadius;
 @inputDisabledBackground:       @grayLighter;
 @formActionsBackground:         #f5f5f5;
@@ -206,7 +206,7 @@
 
 // Hr border color
 // -------------------------
-@hrBorder:                #ccc;
+@hrBorder:                #aaa;
 
 
 // Horizontal forms & lists
@@ -227,27 +227,27 @@
 @navbarHeight:                    40px;
 @navbarBackgroundHighlight:       @white;
 @navbarBackground:                @white;
-@navbarBorder:                    darken(@navbarBackground, 12%);
+@navbarBorder:                    transparent;
 
-@navbarText:                      @black;
+@navbarText:                      @color_five;
 @navbarLinkColor:                 @gray + #111;
 @navbarLinkColorHover:            @white;
-@navbarLinkColorActive:           @black;
-@navbarLinkBackgroundHover:       @color_three;
-@navbarLinkBackgroundActive:      transparent;
+@navbarLinkColorActive:           @navbarLinkColorHover;
+@navbarLinkBackgroundHover:       @color_five;
+@navbarLinkBackgroundActive:      @navbarLinkBackgroundHover;
 
 @navbarBrandColor:                @navbarLinkColor;
 
 // Inverted navbar
-@navbarInverseBackground:                @color_one;
-@navbarInverseBackgroundHighlight:       @color_one;
-@navbarInverseBorder:                    @color_one;
+@navbarInverseBackground:                @color_five;
+@navbarInverseBackgroundHighlight:       @color_five;
+@navbarInverseBorder:                    @color_five;
 
 @navbarInverseText:                      @white;
 @navbarInverseLinkColor:                 @white;
 @navbarInverseLinkColorHover:            @white;
-@navbarInverseLinkColorActive:           @grayLighter;
-@navbarInverseLinkBackgroundHover:       @color_three;
+@navbarInverseLinkColorActive:           @black;
+@navbarInverseLinkBackgroundHover:       @color_one;
 @navbarInverseLinkBackgroundActive:      @color_one;
 
 @navbarInverseSearchBackground:          lighten(@navbarInverseBackground, 25%);
@@ -267,9 +267,9 @@
 
 // Hero unit
 // -------------------------
-@heroUnitBackground:              #AAC3DD;
-@heroUnitHeadingColor:            inherit;
-@heroUnitLeadColor:               inherit;
+@heroUnitBackground:              @color_one;
+@heroUnitHeadingColor:            @black;
+@heroUnitLeadColor:               @white;
 
 
 // Form states and alerts
