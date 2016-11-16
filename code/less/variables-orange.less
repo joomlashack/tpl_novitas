@@ -88,16 +88,16 @@
 
 // Typography
 // -------------------------
-@sansFontFamily:        'Prociono', Helvetica, Arial, sans-serif;
-@serifFontFamily:       'Cormorant Garamond', "Times New Roman", Times, serif;
+@sansFontFamily:        @serifFontFamily;
+@serifFontFamily:       "Times New Roman", Times, serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
 @baseFontSize:          18px;
 @baseFontFamily:        @serifFontFamily;
 @baseLineHeight:        22px;
-@altFontFamily:         Georgia, "Times New Roman", Times, serif;
+@altFontFamily:         @serifFontFamily;
 
-@headingsFontFamily:    @sansFontFamily; // empty to use BS default, @baseFontFamily
+@headingsFontFamily:    @serifFontFamily; // empty to use BS default, @baseFontFamily
 @headingsFontWeight:    900;    // instead of browser default, bold
 @headingsColor:         @textColor; // empty to use BS default, @textColor
 

@@ -19,9 +19,6 @@ defined('_JEXEC') or die('Restricted access');
 <html>
     <head>
         <w:head />
-        <link href="//fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-        <link href="//fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,600,700" rel="stylesheet">
-        <link href="//fonts.googleapis.com/css?family=Prociono" rel="stylesheet">
     </head>
     <body>
 
@@ -119,7 +116,7 @@ defined('_JEXEC') or die('Restricted access');
                     <?php endif; ?>
                     <div class="<?php echo $wrightContainerClass ?> footer-content">
                         <?php if ($this->countModules('footer')) : ?>
-                        <w:module type="row-fluid" name="footer" />
+                        <w:module type="row-fluid" name="footer" chrome="wrightflexgrid"/>
                         <?php endif; ?>
                         <w:footer />
                     </div>
