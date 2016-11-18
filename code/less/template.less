@@ -103,8 +103,13 @@ dl.article-info{
 }
 .breadcrumb{
 	padding: 0;
-	> li > .divider{
-		color: @textColor;
+
+	> li {
+		text-shadow: none;
+
+		&> .divider{
+			color: @textColor;
+		}
 	}
 }
 .filter-search.alert.alert-info{
@@ -461,6 +466,31 @@ body {
 .dropdown-menu,
 .hero-unit {
 	.border-radius(0);
+}
+
+#bottom-menu {
+	background: rgba(0, 0, 0, 0.3);
+
+	.navbar .nav > li > a {
+		color: @white;
+	}
+}
+
+#toolbar {
+
+	.navbar-inverse .nav > li.dropdown {
+
+		&.open > .dropdown-toggle,
+		&.active > .dropdown-toggle,
+		&.open.active > .dropdown-toggle {
+			color: @white;
+
+			.caret {
+				border-bottom-color: @white;
+				border-top-color: @white;
+			}
+		}
+	}
 }
 
 // ----------------------------------------------------------------------------------
