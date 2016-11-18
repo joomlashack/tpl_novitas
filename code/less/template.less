@@ -176,8 +176,14 @@ h1, h2, h3, h4, h5, h6{
 	margin: 0 0 1rem;
 }
 
-.readmore{
-	float: right;
+p.readmore{
+	clear: none;
+	float: none;
+
+	a.readmore {
+		float: none;
+		text-transform: uppercase;
+	}
 }
 
 aside input,
@@ -382,6 +388,15 @@ body {
 
 /************* Menus *******************************************************/
 
+.navbar-inverse .nav > .active {
+
+	&> a,
+	&> a:hover,
+	&> a:focus {
+		color: @white;
+	}
+}
+
 .navbar-inner {
 	border: 0;
 	box-shadow: 0 0;
@@ -496,9 +511,7 @@ body {
 	.clearfix();
 
 	.readmore{
-		clear: both;
 		color: lighten(@color_five, 30%);
-		text-transform: uppercase;
 
 		&:hover, &:focus {
 			color: @textColor;
