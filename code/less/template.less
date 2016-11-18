@@ -188,8 +188,20 @@ aside .uneditable-input{
 	.m-t-1;
 }
 
-#top > div{
-	padding: 10px;
+#top_primary {
+
+	[class*="module"]:last-child {
+		margin-bottom: 0;
+	}
+
+	.form-inline {
+		margin-top: 6px;
+
+		input[type="image"] {
+			width: 32px;
+			height: 32px;
+		}
+	}
 }
 
 .home {
@@ -272,7 +284,6 @@ aside {
 }
 
 #mod-search-searchword {
-    border: 2px solid #CDCDCD;
     border-radius: 0 0 0 0;
     margin-bottom: 0;
 }
