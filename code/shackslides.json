@@ -1,7 +1,7 @@
 {
   "width":"500",
   "height":"512",
-  "height_adjustment": "crop",
+  "height_adjustment": "adjust",
   "title_description_position":"bottom",
   "title_description_alignment":"left",
   "title_description_padding_vertical":"10",
