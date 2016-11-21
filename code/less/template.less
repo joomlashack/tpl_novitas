@@ -148,7 +148,8 @@ a:focus{
 	line-height: @baseLineHeight + 4;
 
 	a {
-		color: @textColor;
+		color: @white;
+		text-decoration: underline;
 
 		&:hover, &:focus {
 			text-shadow: 0 1px 2px @grayDark;
@@ -246,13 +247,6 @@ aside .uneditable-input{
 	}
 }
 
-.home {
-	#main + aside {
-		border-left: 1px solid @hrBorder;
-		padding-left: 1rem;
-	}
-}
-
 [class*="module"] {
 	margin-bottom: 2rem;
 
@@ -318,11 +312,6 @@ aside {
 }
 .nav + *{
 	margin-top: 20px;
-}
-
-
-.row, .row-fluid {
-	display: flex;
 }
 
 #mod-search-searchword {
@@ -475,6 +464,10 @@ body {
 
 	.navbar .nav > li > a {
 		color: @white;
+
+		[class*="icon-"] {
+			color: @white;
+		}
 	}
 }
 

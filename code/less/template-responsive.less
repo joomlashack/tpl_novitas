@@ -10,6 +10,7 @@
 
 		.btn-navbar {
 			background: @color_one;
+			margin-bottom: 10px;
 
 			.icon-bar {
 				background: @white;
@@ -194,6 +195,17 @@
 	}
 }
 
+@media(min-width:768px) {
+
+	.home {
+
+		#main + aside {
+			border-left: 1px solid @hrBorder;
+			padding-left: 1rem;
+		}
+	}
+}
+
 /* Tablets */
 @media(min-width:768px) and (max-width:979px){
 	.row .module_ms1.span12,
@@ -249,20 +261,37 @@
 
 /* Phones */
 @media(max-width:767px){
+
+	#logo img {
+		max-width: 250px;
+		margin-bottom: 10px;
+	}
+
 	.row .module_ms1[class*="span"],
 	.row .module_ms2[class*="span"]{
 		width: auto !important;
 	}
+
 	#header{
 		text-align: center;
+
+		.pull-right {
+			float: none;
+		}
+
+		form {
+			margin: 0 auto;
+
+			#mod-search-searchword {
+				width: 100px;
+			}
+		}
 	}
+
 	.module, .moduletable, .moduletext, #top > div {
 		padding: 0;
 	}
 	[class*="span"], .row-fluid [class*="span"] {
-		margin-bottom: 0;
-	}
-	.moduletable, .moduletable_ms1, .moduletable_ms2, .moduletable_ms3, .moduletext, .moduletext_ms1, .moduletext_ms2, .moduletext_ms3, .module, .module_ms1, .module_ms2, .module_ms3 {
 		margin-bottom: 0;
 	}
 	#toolbar, #header, #menu, #featured, #grid-top, #main-content, #above-content, #breadcrumbs, #grid-bottom, #grid-bottom2, #bottom-menu {
