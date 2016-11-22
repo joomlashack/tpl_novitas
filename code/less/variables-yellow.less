@@ -2,12 +2,45 @@
 // Novitas
 // --------------------------------------------------
 
-@color_one:#D0AA5E;     //navbarinverse
+
+// Options dropdown-submenu , this is a element parent with arrow for submenu
+// You can use true/false for show arrow
+// -------------------------
+@dropdownSubmenuLinkArrow : true;
+@navbarInverseDropdownSubmenuLinkArrow : true;
+
+
+// Gradient options of dropdown links
+// You can use true/false for add gradient
+// -------------------------
+
+@dropdownLinkGradient : false;
+@navbarInverseDropdownLinkGradient : false;
+
+@navbarInnerGradient : false;
+@navbarInverseInnerGradient : false;
+
+@buttonGradient: false;
+
+
+// Dropdown For navbar-inverse
+// -------------------------
+@navbarInverseDropdownBackground : @dropdownBackground;
+@navbarInverseDropdownBorderFallback : #ccc;
+@navbarInverseDropdownBorder : @dropdownBorder;
+@navbarInverseDropdownLinkColor : @dropdownLinkColor;
+@navbarInverseDropdownLinkColorHover : @dropdownLinkColorHover;
+@navbarInverseDropdownLinkColorActive : @dropdownLinkColorActive;
+@navbarInverseDropdownLinkBackgroundHover : @dropdownLinkBackgroundHover;
+@navbarInverseDropdownLinkBackgroundActive : @dropdownLinkBackgroundActive;
+
+
+@color_one:#EF9B01;     //navbarinverse
 @color_two:#fff;     //BodyBackground
 @color_three:#3F4345; //navbarLinkBackgroundHover
 @color_four:#F0F0ED; //ms1Background
 @color_five:@black; //FooterBackground
-@color_six:#a37d2f;//linkColor
+@color_six:#D58B01;//linkColor
 
 //
 // Variables
@@ -55,18 +88,18 @@
 
 // Typography
 // -------------------------
-@sansFontFamily:        "Times New Roman", Helvetica, Arial, sans-serif;
-@serifFontFamily:       Georgia, "Times New Roman", Times, serif;
+@sansFontFamily:        @serifFontFamily;
+@serifFontFamily:       'Droid Serif', "Times New Roman", Times, serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
 @baseFontSize:          14px;
-@baseFontFamily:        @sansFontFamily;
-@baseLineHeight:        20px;
+@baseFontFamily:        @serifFontFamily;
+@baseLineHeight:        22px;
 @altFontFamily:         @serifFontFamily;
 
 @headingsFontFamily:    @serifFontFamily; // empty to use BS default, @baseFontFamily
-@headingsFontWeight:    900;    // instead of browser default, bold
-@headingsColor:         @black; // empty to use BS default, @textColor
+@headingsFontWeight:    500;    // instead of browser default, bold
+@headingsColor:         @textColor; // empty to use BS default, @textColor
 
 
 // Component sizing
@@ -81,9 +114,9 @@
 @paddingSmall:          2px 10px;  // 26px
 @paddingMini:           0 6px;   // 22px
 
-@baseBorderRadius:      4px;
-@borderRadiusLarge:     6px;
-@borderRadiusSmall:     3px;
+@baseBorderRadius:      0;
+@borderRadiusLarge:     0;
+@borderRadiusSmall:     0;
 
 
 // Tables
@@ -95,11 +128,11 @@
 
 // Buttons
 // -------------------------
-@btnBackground:                     #ccc;
-@btnBackgroundHighlight:            darken(#ccc, 10%);
-@btnBorder:                         #ccc;
+@btnBackground:                     lighten(@textColor, 30%);
+@btnBackgroundHighlight:            @textColor;
+@btnBorder:                         @textColor;
 
-@btnPrimaryBackground:              #d0aa5e;
+@btnPrimaryBackground:              @color_one;
 @btnPrimaryBackgroundHighlight:     #dabc80;
 
 @btnInfoBackground:                 #5bc0de;
@@ -121,7 +154,7 @@
 // Forms
 // -------------------------
 @inputBackground:               @white;
-@inputBorder:                   #ccc;
+@inputBorder:                   #aaa;
 @inputBorderRadius:             @baseBorderRadius;
 @inputDisabledBackground:       @grayLighter;
 @formActionsBackground:         #f5f5f5;
@@ -139,8 +172,8 @@
 @dropdownLinkColorHover:        @black;
 @dropdownLinkColorActive:       @black;
 
-@dropdownLinkBackgroundActive:  @white;
-@dropdownLinkBackgroundHover:   @white;
+@dropdownLinkBackgroundActive:  transparent;
+@dropdownLinkBackgroundHover:   transparent;
 
 
 
@@ -173,7 +206,7 @@
 
 // Hr border color
 // -------------------------
-@hrBorder:                #ccc;
+@hrBorder:                #aaa;
 
 
 // Horizontal forms & lists
@@ -194,27 +227,27 @@
 @navbarHeight:                    40px;
 @navbarBackgroundHighlight:       @white;
 @navbarBackground:                @white;
-@navbarBorder:                    darken(@navbarBackground, 12%);
+@navbarBorder:                    transparent;
 
-@navbarText:                      @black;
+@navbarText:                      @color_five;
 @navbarLinkColor:                 @gray + #111;
 @navbarLinkColorHover:            @white;
-@navbarLinkColorActive:           @black;
-@navbarLinkBackgroundHover:       @color_three;
-@navbarLinkBackgroundActive:      transparent;
+@navbarLinkColorActive:           @navbarLinkColorHover;
+@navbarLinkBackgroundHover:       @color_five;
+@navbarLinkBackgroundActive:      @navbarLinkBackgroundHover;
 
-@navbarBrandColor:                @white;
+@navbarBrandColor:                @navbarLinkColor;
 
 // Inverted navbar
-@navbarInverseBackground:                @color_one;
-@navbarInverseBackgroundHighlight:       @color_one;
-@navbarInverseBorder:                    @color_one;
+@navbarInverseBackground:                @color_five;
+@navbarInverseBackgroundHighlight:       @color_five;
+@navbarInverseBorder:                    @color_five;
 
 @navbarInverseText:                      @white;
 @navbarInverseLinkColor:                 @white;
 @navbarInverseLinkColorHover:            @white;
 @navbarInverseLinkColorActive:           @black;
-@navbarInverseLinkBackgroundHover:       @color_three;
+@navbarInverseLinkBackgroundHover:       @color_one;
 @navbarInverseLinkBackgroundActive:      @color_one;
 
 @navbarInverseSearchBackground:          lighten(@navbarInverseBackground, 25%);
@@ -234,9 +267,9 @@
 
 // Hero unit
 // -------------------------
-@heroUnitBackground:              #E4CEA3;
-@heroUnitHeadingColor:            #808080;
-@heroUnitLeadColor:               @black;
+@heroUnitBackground:              @color_one;
+@heroUnitHeadingColor:            @black;
+@heroUnitLeadColor:               @white;
 
 
 // Form states and alerts
