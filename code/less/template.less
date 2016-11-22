@@ -502,6 +502,30 @@ body {
 	}
 }
 
+#toolbar {
+
+	.navbar-inverse .navbar-inner {
+		background: @color_one;
+
+		.nav > li {
+
+			&.dropdown {
+
+				&.open.active > .dropdown-toggle,
+				&.active > .dropdown-toggle,
+				&.open > .dropdown-toggle {
+					background: darken(@color_one, 15%);
+				}
+			}
+
+			&> a:hover,
+			&> a:focus {
+				background: darken(@color_one, 15%);
+			}
+		}
+	}
+}
+
 // ----------------------------------------------------------------------------------
 // Shackslides 3
 
