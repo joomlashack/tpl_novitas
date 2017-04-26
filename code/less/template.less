@@ -475,11 +475,27 @@ body {
 #bottom-menu {
 	background: rgba(0, 0, 0, 0.3);
 
-	.navbar .nav > li > a {
-		color: @white;
+	.navbar {
 
-		&.hidden-text > [class*="icon-"] {
+		.btn-navbar {
 			color: @white;
+			text-decoration: none;
+			text-shadow: none;
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: @black;
+				text-decoration: none;
+			}
+		}
+
+		.nav > li > a {
+			color: @white;
+
+			&.hidden-text > [class*="icon-"] {
+				color: @white;
+			}
 		}
 	}
 }
